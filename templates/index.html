@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Music App</title>
+    <title>My Music</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
 
-<h1>Music Streaming App</h1>
+<div class="sidebar">
+git add .
+    <h2>🎵 My Music</h2>
 
-<a href="/login">Login</a>
-<a href="/register">Register</a>
-<a href="/playlist">Playlist</a>
+    <ul>
+        <li>Home</li>
+        <li>Search</li>
+        <li>Your Library</li>
+        <li>Playlists</li>
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <h1>Trending Songs</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+
+            <h3>Song One</h3>
+
+            <p>Artist One</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+
+            <h3>Song Two</h3>
+
+            <p>Artist Two</p>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
